@@ -15,7 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Drawing import views
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url('home/',views.home,name='home'),
+    url('draw/',views.draw,name='drawing-board'),#.../drawing board
 ]
+
+# from django.urls import path
+# from django.conf.urls import url
+
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
