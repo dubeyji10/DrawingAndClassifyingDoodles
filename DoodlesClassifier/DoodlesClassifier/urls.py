@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url('home/',views.home,name='home'),
     url('draw/',views.draw,name='drawing-board'),#.../drawing board
+    path('image/new/',views.get_img3,name='sketchCapture'),
 ]
 
 # from django.urls import path
